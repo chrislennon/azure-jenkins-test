@@ -25,12 +25,9 @@ do
   esac
 done
 
-jenkins_script = "${repository_location}install_jenkins.sh"
-prudentia_script = "${repository_location}install_prudentia.sh"
+curl -O https://raw.githubusercontent.com/chrislennon/vandebron-jenkins-test/master/install_jenkins.sh
+curl -O https://raw.githubusercontent.com/chrislennon/vandebron-jenkins-test/master/install_prudentia.sh
 
-curl -O $jenkins_script
-curl -O $prudentia_script
-
-./jenkins.sh -jf $jenkins_fqdn -pi $vm_private_ip
+./jenkins.sh -jf $(jenkins_fqdn) -pi $(vm_private_ip)
 
 ./install_prudentia.sh
