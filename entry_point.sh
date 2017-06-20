@@ -15,32 +15,12 @@ do
       vm_private_ip="$1"
       shift
       ;;
-    --jenkins_release_type|-jrt)
-      jenkins_release_type="$1"
-      shift
-      ;;
-    --jenkins_version_location|-jvl)
-      jenkins_version_location="$1"
-      shift
-      ;;
-    --artifacts_location|-al)
-      artifacts_location="$1"
-      shift
-      ;;
-    --sas_token|-st)
-      artifacts_location_sas_token="$1"
-      shift
-      ;;
-    --help|-help|-h)
-      print_usage
-      exit 13
-      ;;
     *)
       echo "ERROR: Unknown argument '$key' to script '$0'" 1>&2
       exit -1
   esac
 done
 
-./jenkins.sh -jf $jenkins_fqdn -pi $vm_private_ip -al $artifacts_location -st $artifacts_location_sas_token
+./jenkins.sh -jf $jenkins_fqdn -pi $vm_private_ip
 
 ./install_prudentia.sh
