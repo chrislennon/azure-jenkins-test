@@ -28,6 +28,9 @@ done
 curl -O https://raw.githubusercontent.com/chrislennon/vandebron-jenkins-test/master/install_jenkins.sh
 curl -O https://raw.githubusercontent.com/chrislennon/vandebron-jenkins-test/master/install_prudentia.sh
 
-./jenkins.sh -jf $(jenkins_fqdn) -pi $(vm_private_ip)
+chmod +x install_jenkins.sh
+chmod +x install_prudentia.sh
+
+./install_jenkins.sh -jf $(jenkins_fqdn) -pi $(vm_private_ip)
 
 ./install_prudentia.sh
