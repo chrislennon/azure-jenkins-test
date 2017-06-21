@@ -7,7 +7,7 @@
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-This template allows you to host an instance of Jenkins on a DS1_v2 size Linux Ubuntu 14.04 LTS VM in Azure.
+This template allows you to host an instance of Jenkins on a DS1_v2 size Linux Ubuntu 16.04 LTS VM in Azure.
 
 An example of this project has already been deployed [here]().
 
