@@ -25,8 +25,8 @@ do
   esac
 done
 
-curl -O https://raw.githubusercontent.com/chrislennon/vandebron-jenkins-test/master/install_jenkins.sh
-curl -O https://raw.githubusercontent.com/chrislennon/vandebron-jenkins-test/master/install_prudentia.sh
+curl -O https://raw.githubusercontent.com/chrislennon/azure-jenkins-test/master/install_jenkins.sh
+curl -O https://raw.githubusercontent.com/chrislennon/azure-jenkins-test/master/install_prudentia.sh
 
 chmod +x install_jenkins.sh
 chmod +x install_prudentia.sh
