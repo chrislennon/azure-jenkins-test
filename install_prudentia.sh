@@ -14,7 +14,7 @@ sudo apt-get install -y libffi-dev libssl-dev
 sudo -H -u jenkins bash -c 'pip install --upgrade pip'
 
 # Install prudentia under the jenkins user
-sudo -H -u jenkins bash -c 'pip install prudentia' # This should probably be part of each jenkins job as a virtualenv 
+sudo -H -u jenkins bash -c 'pip install --user prudentia' # This should probably be part of each jenkins job as a virtualenv 
 
 # Place the path for pip binaries into $PATH for user
 
