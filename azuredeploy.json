@@ -37,7 +37,7 @@
     "vmPrivateIP": "10.0.0.5",
     "jenkinsExtension": "[concat(variables('resourcePrefix'), 'Init')]",
     "_jenkinsScript": "install_jenkins.sh",
-    "_repositoryLocation": "https://raw.githubusercontent.com/chrislennon/vandebron-jenkins-test/master/",
+    "_repositoryLocation": "https://raw.githubusercontent.com/chrislennon/azure-jenkins-test/master/",
     "_entryScript": "entry_point.sh",
     "_prudentiaScript": "install_prudentia.sh"
   },
